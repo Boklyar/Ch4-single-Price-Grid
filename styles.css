@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+font-family: 'Karla', sans-serif;
+}
+
+h2 {
+  color: hsl(179, 62%, 43%);
+  margin-right: 10px;
+}
+ h1, p {
+  color: white;
+}
+li {
+  color: hsl(204, 43%, 93%);
+  line-height: 1,6;
+
+}
+
+
+button {
+  width: 250px;
+	box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+	background-color:#b8e356;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: "Karla", sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:12px 28px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #86ae47;
+}
+button:hover {
+	background:linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+	background-color:#a5cc52;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+ul {
+  margin-left: 10px;
+}
+.wrapper {
+  text-align: center;
+}
+.subscribe {
+  color: white;
+  font-family: 'Karla', sans-serif;
+}
+.number {
+  font-family: 'Karla', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+height: 25;
+width: 200px;
+margin: auto;
+}
+.perMonth {
+  font-size: 15px;
+  color: hsl(204, 43%, 93%);
+  margin-left: 10px;
+}
+.whyUs {
+  color: white;
+  margin-left: 10px;
+}
+.top-text {
+  color: hsl(71, 73%, 54%);
+  margin-right: 10px;
+}
+.top-p {
+  color: hsl(218, 22%, 67%);
+  margin-right: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  text-align: center;
+  margin:50px auto 50px auto;
+  border-radius: 2rem;
+}
+
+.top-section {
+  background-color: white;
+  flex-basis: 100%;
+  text-align: left;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 18px;
+}
+
+.left-section {
+  background-color: hsl(179, 62%, 43%);
+  padding: 18px;
+  flex: 50%;
+  border-bottom-left-radius: 10px;
+  text-align: left;
+}
+
+.right-section {
+  background-color: hsl(180, 62%, 55%);
+  padding: 10px;
+  flex: 50%;
+  border-bottom-right-radius: 10px;
+  text-align: left;
+
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 966px) {
+  .flex-container {
+    flex-direction: column;
+}
+  .left-section {
+    border-radius: 0;
+
+  }
+  .right-section {
+    border-bottom-left-radius: 10px;
+  }
+}
